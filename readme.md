@@ -8,9 +8,9 @@ Your blob starts out with 10 mass. Maintain the proper diet (eat the correct foo
 
 ##Food Types  
   
-* `**Snack** | *Color* gray | *Outcome* +1 Mass`  
-* `**Laxative** | *Color* red | *Outcome* -10 Mass`  
-* `**Super** | *Color* blue | *Outcome* allows you to consum Laxatives and recieve +5 mass | *Only lasts for 5 seconds.*`
+* `Snack | Color: gray | Outcome: +1 Mass`  
+* `Laxative | Color: red | Outcome: -10 Mass`  
+* `Super | Color: blue | Outcome: allows you to consum Laxatives and recieve +5 mass | -Only lasts for 5 seconds.-`
 
 
 
