@@ -3,16 +3,24 @@
 		<meta charset="UTF-8">
 		<title>MouseAtk</title>
 
-		<script src="js/mouse.js"></script>
 		<script src="js/ai.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/jq.js"></script>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/bp.css">
 	</head>
 
 	<body>
-		<div id="wrapper">
-		<h1>Swag</h1>
-			<canvas id="canvas" height="300px" width="300px" style="border: 1px solid black">
-			</canvas>
+		<canvas id="canvas"></canvas>
+		<div id="scores">
+			<h1 id="mass">mass: </h1>
+			<h2 id="super-wrap"><small>super: <span id="super"></small></h2>
+		</div>
+		<div class="wrap">
+			<div class="container text-center">
+				<h1 id="stop"><span id="final"></span> <small>Time: <span id="time"></span></small></h1>
+				<a href="" class="btn btn-primary">Restart</a> <a href="https://github.com/ColtraneNadler/MouseAtk/blob/master/readme.md" class="btn btn-warning">How to Play</a>
+			</div>
 		</div>
 	</body>
 </html>

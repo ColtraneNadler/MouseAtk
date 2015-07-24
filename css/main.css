@@ -1,0 +1,22 @@
+#scores {
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	left: 35;
+}
+
+.wrap {
+	display: none;
+}
+
+#stop {
+	margin-top: 20%;
+}
+
+#super-wrap {
+	display: none;
+}
+
+#super {
+	color: blue;
+}
