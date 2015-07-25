@@ -1,0 +1,27 @@
+#scores {
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	left: 35;
+}
+
+#score {
+	margin-top: -5px;
+}
+
+.wrap {
+	display: none;
+}
+
+#stop {
+	margin-top: 20%;
+}
+
+#super-wrap {
+	margin-top: -5px;
+	display: none;
+}
+
+#super {
+	color: blue;
+}

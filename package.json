@@ -1,0 +1,23 @@
+{
+  "name": "MouseAtk",
+  "version": "1.0.0",
+  "description": "![Image](http://gyazo.com/2e3f342bab1ee5292cead1660c7dc766.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ColtraneNadler/MouseAtk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ColtraneNadler/MouseAtk/issues"
+  },
+  "homepage": "https://github.com/ColtraneNadler/MouseAtk",
+  "dependencies": {
+    "express": "^4.13.1",
+    "morgan": "^1.6.1"
+  }
+}
