@@ -2,7 +2,7 @@
   "name": "MouseAtk",
   "version": "1.0.0",
   "description": "![Image](http://gyazo.com/2e3f342bab1ee5292cead1660c7dc766.png)",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
