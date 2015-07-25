@@ -13,6 +13,6 @@ app.get('*', function(req, res) {
 	res.json(404);
 })
 
-app.listen(80, function() {
+app.listen(3000, function() {
 	console.log('Running')
 })

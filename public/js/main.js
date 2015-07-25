@@ -8,6 +8,9 @@ window.onload = function() {
 		y: 0
 	}
 
+	//audio
+	var pop = new Audio('audio/pop.mp3')
+
 	//Grabbing Canvas Element
 	var canvas = document.getElementById('canvas')
 		, ctx = canvas.getContext('2d')
@@ -118,20 +121,27 @@ window.onload = function() {
 							$('#super-wrap').hide()
 						}, 5000)
 					}
+				//if the block is a laxative
 				} else if(temp.red === true) {
 					if(blob.super === true) {
+						pop.play()
 						mass += 5;
 						if(mass > top) {
 							top = mass;
 						}	
 					} else {
-						if(mass > 1000) {
+						if(mass > 700) {
+							mass -= top * (1/3) * (4/10);
+						} else if (mass > 300){
 							mass -= top * (1/3) * (1/10);
 						} else {
 							mass -= 10;
 						}
 					}
+				//if the block is just a regular food
 				} else {
+					pop.play();
+					console.log('pop?')
 					mass += 1;
 					if(mass > top) {
 						top = mass;
@@ -157,7 +167,6 @@ window.onload = function() {
 					blob.w = mass;
 					blob.h = mass;
 				}
-				console.log('Deleted!')
 			} else {
 				if(food[j].red === true) {
 					rect(food[j], 'red')
