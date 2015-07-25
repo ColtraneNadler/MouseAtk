@@ -130,10 +130,11 @@ window.onload = function() {
 							top = mass;
 						}	
 					} else {
+						//Lose more mass from laxatives the more mass you have
 						if(mass > 700) {
-							mass -= top * (1/3) * (4/10);
+							mass -= Math.round(top * (1/3) * (4/10));
 						} else if (mass > 300){
-							mass -= top * (1/3) * (1/10);
+							mass -= Math.round(top * (1/3) * (1/10));
 						} else {
 							mass -= 10;
 						}
