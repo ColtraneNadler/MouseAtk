@@ -10,6 +10,9 @@ window.onload = function() {
 
 	//audio
 	var pop = new Audio('audio/pop.mp3')
+		, blue = new Audio('audio/anti.mp3')
+		, hit = new Audio('audio/red.mp3');
+							console.log(blue.play)
 
 	//Grabbing Canvas Element
 	var canvas = document.getElementById('canvas')
@@ -33,7 +36,7 @@ window.onload = function() {
     	var h = $(window).height();
 
     	$(canvas).attr("width", (w - 10) + "px");
-    	$(canvas).attr("height", (h - 10) + "px"); 
+    	$(canvas).attr("height", (h - 30) + "px"); 
 	});
 
 	var blob = {
@@ -106,6 +109,7 @@ window.onload = function() {
 						var superNum = 5;
 						$('#super-wrap').show()
 						$('#super').text(superNum + '.0s');
+						blue.play();
 						var superCool = setInterval(function() {
 							superNum -= 0.1
 							if((Math.round(superNum * 10) / 10).toString().length !== 1) {
@@ -116,6 +120,8 @@ window.onload = function() {
 							}
 						}, 100)
 						setTimeout(function() {
+							blue.pause();
+							blue.currentTime = 0;
 							blob.super = false;
 							clearInterval(superCool)
 							$('#super-wrap').hide()
@@ -130,6 +136,7 @@ window.onload = function() {
 							top = mass;
 						}	
 					} else {
+						hit.play();
 						//Lose more mass from laxatives the more mass you have
 						if(mass > 700) {
 							mass -= Math.round(top * (1/3) * (4/10));
@@ -149,13 +156,12 @@ window.onload = function() {
 					}
 				}
 
-				//if your mass drops below 45% of, the game is over
+				//if your mass drops below 66% of, the game is over
 				if(mass < (top * (2/3))) {
 					clear();
 					var end = Date.now() - start;
 					$('#canvas').remove();
-					$('#mass').remove();
-					$('#score').remove();
+					$('#scores').remove();
 					$('.wrap').show();
 					$('#final').text('Greatest mass: ' + top);
 					$('#time').text(Math.round(end/100) / 10 + 's')
@@ -185,6 +191,7 @@ window.onload = function() {
 		};
 		$('#mass').text('mass: ' + mass);
 		$('#score').text('high score: ' + top);
+		$('#loss').text(Math.round(top * (2/3)));
 	}, 1000/60)
 
 	var game = setInterval(function() {

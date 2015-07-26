@@ -4,7 +4,7 @@
   
 ##Guide  
   
-Your blob starts out with 10 mass. Maintain the proper diet (eat the correct foods) to grow as large as you possibly can! If your mass drops below **45%** of your greatest mass... your game ends, and you must restart.  
+Your blob starts out with 10 mass. Maintain the proper diet (eat the correct foods) to grow as large as you possibly can! If your mass drops below **65%** of your greatest mass... your game ends, and you must restart.  
 
 ##Food Types  
   
